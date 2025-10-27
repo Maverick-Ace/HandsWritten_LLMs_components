@@ -25,11 +25,6 @@ class CrossAttention(nn.Module):
         return x
     
 
-
-
-
-
-
 class CrossAttention(nn.Module):
     def __init__(self, d_k:int, dropout:float):
         self.w_q = nn.Linear(d_k, d_k, bias=False)
